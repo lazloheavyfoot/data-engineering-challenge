@@ -20,7 +20,7 @@ def transform_data():
     # Save for next step
     post_counts.to_csv("transformed_post_counts.csv", index=False)
 
-    print("✅ Transformation complete. Saved as transformed_post_counts.csv")
+    print("Transformation complete. Saved as transformed_post_counts.csv")
 
 if __name__ == "__main__":
     transform_data()

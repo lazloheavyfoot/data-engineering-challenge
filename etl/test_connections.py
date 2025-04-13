@@ -10,18 +10,18 @@ def test_postgres():
         engine = get_postgres_engine()
         with engine.connect() as conn:
             result = conn.execute(text("SELECT version();"))
-            print("✅ Postgres Connected:", result.fetchone())
+            print("Postgres Connected:", result.fetchone())
     except Exception as e:
-        print("❌ Postgres connection failed:", e)
+        print("Postgres connection failed:", e)
 
 def test_sqlserver():
     try:
         engine = get_sqlserver_engine()
         with engine.connect() as conn:
             result = conn.execute(text("SELECT @@VERSION;"))
-            print("✅ SQL Server Connected:", result.fetchone())
+            print("SQL Server Connected:", result.fetchone())
     except Exception as e:
-        print("❌ SQL Server connection failed:", e)
+        print("SQL Server connection failed:", e)
 
 if __name__ == "__main__":
     test_postgres()

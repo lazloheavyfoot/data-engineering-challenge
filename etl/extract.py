@@ -18,4 +18,4 @@ if __name__ == "__main__":
     # Save locally for inspection / staging
     users_df.to_csv("users.csv", index=False)
     posts_df.to_csv("posts.csv", index=False)
-    print("✅ Data extracted and saved to users.csv and posts.csv")
+    print("Data extracted and saved to users.csv and posts.csv")

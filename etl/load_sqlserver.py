@@ -14,7 +14,7 @@ def load_to_sql_server():
     # Load the data into a new table
     df.to_sql("user_post_counts", engine, if_exists="replace", index=False)
 
-    print("✅ Transformed data loaded into SQL Server!")
+    print("Transformed data loaded into SQL Server!")
 
 if __name__ == "__main__":
     load_to_sql_server()

@@ -25,7 +25,7 @@ def load_csv_to_postgres():
     # Insert posts
     posts_df.to_sql("posts", engine, if_exists="replace", index=False)
 
-    print("✅ Data successfully loaded into PostgreSQL!")
+    print("Data successfully loaded into PostgreSQL!")
 
 if __name__ == "__main__":
     load_csv_to_postgres()
